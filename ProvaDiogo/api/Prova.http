@@ -1,0 +1,32 @@
+### Adicionar nova categoria
+POST http://localhost:5000/api/categoria/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Categoria Exemplo"
+}
+
+### Obter lista de categorias
+GET http://localhost:5000/api/categoria/listar
+
+### Adicionar nova tarefa
+POST http://localhost:5000/api/tarefa/cadastrar
+Content-Type: application/json
+
+{
+    "titulo": "Tarefa Exemplo",
+    "descricao": "Detalhes da tarefa",
+    "categoriaId": 1
+}
+
+### Obter lista de tarefas
+GET http://localhost:5000/api/tarefa/listar
+
+### Atualizar status da tarefa
+PATCH http://localhost:5000/api/tarefa/alterar/1
+
+### Obter tarefas pendentes
+GET http://localhost:5000/api/tarefa/naoconcluidas
+
+### Obter tarefas finalizadas
+GET http://localhost:5000/api/tarefa/concluidas
